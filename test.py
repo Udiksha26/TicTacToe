@@ -4,30 +4,30 @@ import logic
 
 class TestLogic(unittest.TestCase):
 
-    def test_get_winner_X(self):
+    def test_player_winner_0(self):
         board = [
-            ['X', None, 'O'],
-            [None, 'X', None],
-            [None, 'O', 'X'],
+            ['0', None, 'X'],
+            [None, '0', None],
+            [None, 'X', '0'],
         ]
-        self.assertEqual(logic.check_win(board, 'X'), 'X')
+        self.assertEqual(logic.check_win(board, '0'), '0')
 
 
         def test_draw(self):
-        board = [
+            board = [
             ['X', 'O', 'O'],
             ['O', 'X', 'X'],
             ['X', 'O', 'O'],
         ]
         self.assertEqual(logic.check_win(board, 'X'), None)
-    
-    def test_get_winner_O(self):
+        
+    def test_get_winner_X(self):
         board = [
-            ['X', 'X', 'O'],
-            [None, 'X', 'O'],
-            ['X', 'O', 'O'],
+            ['0', '0', 'X'],
+            [None, '0', 'X'],
+            ['0', 'X', 'X'],
         ]
-        self.assertEqual(logic.check_win(board, 'O'), 'O')
+        self.assertEqual(logic.check_win(board, 'X'), 'X')
     
 
 if __name__ == '__main__':

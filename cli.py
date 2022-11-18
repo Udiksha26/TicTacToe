@@ -5,12 +5,23 @@
 from logic import TicTacToe
 
 
-
 if __name__ == "__main__":
-    game = TicTacToe()
+        game = TicTacToe()
+        print(" Play against : ")
+        print(" 1. Another Person ")
+        print(" 2. Bot ")
+        choice = int(input(" Choice: "))
+        if choice == 1: 
+                print("True")
+        else:
 
-    if game.is_another_person()():
-        game.play_with_human()
-    else:
-        game.play_with_computer()
+
+                False
+
+
+        if game.is_another_person():
+                game.play_with_human()
+        else:
+                game.play_with_computer()
+
 
