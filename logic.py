@@ -93,8 +93,11 @@ class TicTacToe:
             print("Game is draw")
         else:
             print(f"{self.human_players[not chance]} is the winner!! ")
+        return winner
 
     def playing_with_bot(self):
+        winner = None
+        chance = True
         move_number = 0
         while move_number < 9:
             print("Please take a turn")
@@ -114,13 +117,22 @@ class TicTacToe:
             self.board[row][column] = "X"
             if self.check_win("X"):
                 print("****Congratulations You Win!****")
-                return
+                winner = "X"
+                return "X"
+            
 
             self.bot_move()
 
-            if self.check_win("X"):
+            if self.check_win("0"):
                 print("You lost! Better luck next time. :( ")
-                return
+                winner = "0"
+                return "0"
 
             
             move_number += 2
+           
+            if winner == None:
+                print("Game is draw")
+            else:
+                print(f"{self.human_players[not chance]} is the winner!! ")
+            return winner

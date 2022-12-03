@@ -1,0 +1,57 @@
+import numpy as np
+import pandas as pd
+
+game_filename = "gamesdata.csv"
+#games dataframe
+'''games = pd.DataFrame(columns=[
+    "Game Id",
+    "Player 1",''
+    "Player 2",
+    "Winner",
+])'''
+
+def read_games():
+    try:
+        return pd.read_csv("gamesdata.csv")
+        
+    except FileNotFoundError:
+            return pd.DataFrame(columns= [
+               "Game Id",
+               "Player 1",
+               "Player 2",
+                "Winner", 
+            ])
+
+games = read_games()
+games.loc[len(games)] = {
+    "Game Id":5,
+    "Player 1": name1,
+    "Player 2": name2,
+    "Winner":"Ishwarya",
+}
+print("_____________________________")
+print(games)
+games.to_csv("gamesdata.csv")
+print("Done")
+'''players = pd.DataFrame(columns = [
+     "Name",
+     "Type",
+])
+
+players.loc[0] = {
+    "Name": "Alice",
+    "Type" : "Human",
+}
+players.loc[1] = {
+    "Name": "Bob",
+    "Type" : "Human",
+}
+players.loc[2] = {
+    "Name": "Carol",
+    "Type" : "Bot",
+}
+def add_player(name, type):
+    players.loc[len(players)] = {
+        "Name" : name,
+        "Type" : type
+}  '''

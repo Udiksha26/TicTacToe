@@ -12,16 +12,21 @@ if __name__ == "__main__":
         print(" 2. Bot ")
         choice = int(input(" Choice: "))
         if choice == 1: 
-                print("True")
+                print("True hbmb")
+                name1=input("Enter Player1 name")
+                name2=input("Enter Player2 name")
+                winning = game.play_with_human()
+                print(winning)
+                
         else:
+                name1=input("Player1 Enter name")
+                name2=input("Enter bot name")
+              #  game.playing_with_bot()
+                winning = game.playing_with_bot()
+                print(winning)  
+                
 
 
-                False
-
-
-        if game.is_another_person():
-                game.play_with_human()
-        else:
-                game.play_with_computer()
+  
 
 
