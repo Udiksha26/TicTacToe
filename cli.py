@@ -53,12 +53,26 @@ def read_games():
 
 games = read_games()
 print (len(games))
-games.loc[len(games)] = {
+
+if winning == 'X':
+    print("Winning = ", winning, name1)
+    games.loc[len(games)] = {
     "Game Id": len(games),
     "Player 1": name1,
     "Player 2": name2,
-    "Winner": winning,
+    "Winner": name1,
 }
+elif winning == '0':
+    print("Winning = ", winning, name2)
+    games.loc[len(games)] = {
+    "Game Id": len(games),
+    "Player 1": name1,
+    "Player 2": name2,
+    "Winner": name2,
+}
+    
+
+
 print("_____________________________")
 print(games)
 games.to_csv("gamesdata.csv")
