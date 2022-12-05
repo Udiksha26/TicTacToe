@@ -99,7 +99,9 @@ class TicTacToe:
         winner = None
         chance = True
         move_number = 0
-        while move_number < 9:
+        print("checkpoint")
+        while move_number < 9 and winner == None:
+
             print("Please take a turn")
 
             
@@ -132,7 +134,11 @@ class TicTacToe:
             move_number += 2
            
             if winner == None:
-                print("Game is draw")
+               pass
             else:
                 print(f"{self.human_players[not chance]} is the winner!! ")
+            return winner
+        if winner == None:
+            print ("Draw")
+            winner = "draw"
             return winner

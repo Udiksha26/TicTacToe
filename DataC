@@ -27,7 +27,7 @@ games.loc[len(games)] = {
     "Game Id":5,
     "Player 1": name1,
     "Player 2": name2,
-    "Winner":"Ishwarya",
+    "Winner": winner,
 }
 print("_____________________________")
 print(games)

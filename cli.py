@@ -3,7 +3,8 @@
 # For core game logic, see logic.py.
 
 from logic import TicTacToe
-
+import numpy as np 
+import pandas as pd
 
 if __name__ == "__main__":
         game = TicTacToe()
@@ -26,6 +27,42 @@ if __name__ == "__main__":
                 print(winning)  
                 
 
+ #storing values
+
+
+game_filename = "gamesdata.csv"
+#games dataframe
+'''games = pd.DataFrame(columns=[
+    "Game Id",
+    "Player 1",''
+    "Player 2",
+    "Winner",
+])'''
+
+def read_games():
+    try:
+        return pd.read_csv("gamesdata.csv")
+        
+    except FileNotFoundError:
+            return pd.DataFrame(columns= [
+               "Game Id",
+               "Player 1",
+               "Player 2",
+                "Winner", 
+            ])
+
+games = read_games()
+print (len(games))
+games.loc[len(games)] = {
+    "Game Id": len(games),
+    "Player 1": name1,
+    "Player 2": name2,
+    "Winner": winning,
+}
+print("_____________________________")
+print(games)
+games.to_csv("gamesdata.csv")
+print("Done")
 
   
 
