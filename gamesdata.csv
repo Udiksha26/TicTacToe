@@ -1,28 +1,29 @@
-Game Id,Player 1,Player 2,Winner
-1,Ishwarya,Alice,Ishwarya
-2,Alice,Ish,Alice
-3,Priyanka,Melissa,Melissa
-4,Mehul,Naveen,Naveen
-5,Anu,Akshat,Anu
-6,Anuja,Ankur,Anuja
-7,Amy,Pia,Pia
-7, Hrithik, Raj ,Hrithik
-8, Raj, Hrithik, Raj
-9, Alice, Bob, Alice
-10, Rosie , Mia, Rosie 
-11, Simran, Nam, Simran
-12, Ish, Ud , Ish
-13,Udiksha,Namratha,Udiksha
-14,Emily,Angela,Emily
-15,Jung,Aqib,Jung
-16,Sumedh,Antyush,Antyush
-17,Teja,Manasa,Teja
-18,Yinning,Liu,Liu
-19,Yvonne,Yu,Yvonne
-20,Eureka,Emily,Eureka
-21,Udiksha,fun,Udiksha
-22,Ishwarya,Melissa,Ishwarya
-23,Udiksha,Ish,Udiksha
-24,Udiksha,Emily,Udiksha
-25,Ishwarya,Liu,Ishwarya
-26,Leo,Yulia,Leo
+,Game Id,Player 1,Player 2,Winner
+0,1,Ishwarya,Alice,Ishwarya
+1,2,Alice,Ish,Alice
+2,3,Priyanka,Melissa,Melissa
+3,4,Mehul,Naveen,Naveen
+4,5,Anu,Akshat,Anu
+5,6,Anuja,Ankur,Anuja
+6,7,Amy,Pia,Pia
+7,7, Hrithik, Raj ,Hrithik
+8,8, Raj, Hrithik, Raj
+9,9, Alice, Bob, Alice
+10,10, Rosie , Mia, Rosie 
+11,11, Simran, Nam, Simran
+12,12, Ish, Ud , Ish
+13,13,Udiksha,Namratha,Udiksha
+14,14,Emily,Angela,Emily
+15,15,Jung,Aqib,Jung
+16,16,Sumedh,Antyush,Antyush
+17,17,Teja,Manasa,Teja
+18,18,Yinning,Liu,Liu
+19,19,Yvonne,Yu,Yvonne
+20,20,Eureka,Emily,Eureka
+21,21,Udiksha,fun,Udiksha
+22,22,Ishwarya,Melissa,Ishwarya
+23,23,Udiksha,Ish,Udiksha
+24,24,Udiksha,Emily,Udiksha
+25,25,Ishwarya,Liu,Ishwarya
+26,26,Leo,Yulia,Leo
+27,27,hrithik,bot,hrithik
