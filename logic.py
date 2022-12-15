@@ -2,6 +2,7 @@
 # or output happens here. The logic in this file
 # should be unit-testable.
 
+
 import random
 
 class TicTacToe:
@@ -137,7 +138,7 @@ class TicTacToe:
                pass
             else:
                 print(f"{self.human_players[not chance]} is the winner!! ")
-            return winner
+                return winner
         if winner == None:
             print ("Draw")
             winner = "draw"
