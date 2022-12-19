@@ -1,33 +1,72 @@
 
 <!DOCTYPE html>
 <html>
-<head> 
-<h1>Welcome to my page!! </h1> 
-</header>
-<body>
-  </h1>
-<form action="/my-handling-form-page" method="post">
-  <link rel="stylesheet" href="Styles.css.html">
-</header>
-  <ul>
-    <li>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="user_name" />
-    </li>
-    <li>
-      <label for="mail">E-mail:</label>
-      <input type="email" id="mail" name="user_email" />
-    </li>
-    <li>
-    <li class="button">
-     <button type="submit">Submit</button>
-      </li>
+  <h1>Welcome to my page!! </h1> 
+    <body>
+      <!-- <form method="post">
+        <link rel="stylesheet" href="Styles.css.html">
+        <p>Choose whom you want to play with </p>
+        <input type="radio" id="Another Player" name="whom" value="Another Player">
+        <label for="Another Player">Another Player</label><br>
+        <input type="radio" id="Bot" name="fav_language" value="Bot">
+        <label for="Bot">Bot</label><br>
+        <ul>
+          <li>
+            <label for="name1">Name1</label>
+            <input  id="name1" value="{{ request.form['name1'] }}"></input> 
+          </li>
+          <li>
+            <label for="name2">Name2</label>
+            <input  id="name2" value="{{ request.form['name2'] }}"></input> 
+          </li>
+          <p>Note:- Please leave player2 blank if you want to play as a single player</p>
+          <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form> -->
+      <form method="post">
 
-    </li>
-  </ul>
-</form>
-<img src="/Users/udikshachandra/TECHIN509/tictactoe.jpeg" >
-<img src="tictactoe.jpeg" width="300" height="300">
- <style>
-   </html>   
+        <div class="form-outline ">
+
+            <label for="name1">Name1</label>
+
+            <br>
+
+            <input class="form-label"  type="text" name="name1"
+
+                placeholder="Name of Player1"
+
+                value="{{ request.form['name1'] }}"></input>
+
+            <br>
+
+            <p>Whom do you want to play with</p>
+
+            <input type="radio" name="options1" id="Anotherperson" value="Anotherperson"> Another Person </input><br>
+
+            <input type="radio" name="options1" id="Bot" value="Bot"> Bot </input><br>
+
+            <label for="name2">Name2</label>
+
+            <br>
+
+            <input class="form-label"  typre="text" name="name2" placeholder="Name of Player2"
+
+                    value="{{ request.form['name2']}}">
+
+            </input>
+
+            <br>
+
+            <button class="btn btn-primary btn-block "  type="submit">Submit</button>
+
+            <br>
+
+        </div>
+
+    </form>
+    </body>
+<img src="/Users/udikshachandra/Final/TicTacToe/static/images/tictactoe.jpeg" >
+<img src="/Users/udikshachandra/Final/TicTacToe/static/images/tictactoe.jpeg" width="300" height="300">
+</html>   
 

@@ -17,6 +17,11 @@ class TicTacToe:
             [None, None, None],
             [None, None, None],
         ]
+        self.player1 = "defaultname"
+        self.player2 = "defaultname2"
+        self.choice = ""
+        self.count = 0
+        
     def is_another_person(self):
         print("Game between")
         print("1. Human ")
@@ -57,6 +62,7 @@ class TicTacToe:
             self.bot_move()
         else:
             board[row][column] = "O"
+            count = count +1 
             return board
 
     def play_with_human(self):
@@ -80,9 +86,11 @@ class TicTacToe:
 
             if chance:
                 self.board[row][column] = "X"
+                count = count +1
                 winner = self.check_win("X")
             else:
                 self.board[row][column] = "O"
+                count = count +1
                 winner = self.check_win("O")
 
           
@@ -118,6 +126,7 @@ class TicTacToe:
                 continue
 
             self.board[row][column] = "X"
+            count = count +1
             if self.check_win("X"):
                 print("****Congratulations You Win!****")
                 winner = "X"
